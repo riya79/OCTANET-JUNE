@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #7f848a;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background: #cf9f9f;
+    margin-top: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(68, 112, 87);
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    margin-right: 10px;
+    width: 18%;
+}
+
+.form-group button {
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 18%;
+    transition: background-color 0.3s;
+}
+
+.form-group button:hover {
+    background-color: #4cae4c;
+}
+
+.tasks-container {
+    max-height: 500px;
+    overflow-y: auto;
+    background: #e0f7fa;
+    padding: 10px;
+}
+
+.task {
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.task.completed strong , .task.completed strong {
+    background: #d4edda;
+    text-decoration: line-through;
+}
+
+.task .info {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.task .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.task button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.task button.remove {
+    background-color: #d9534f;
+    color: white;
+}
+
+.task button.remove:hover {
+    background-color: #c9302c;
+}
+
+.task button.edit {
+    background-color: #5bc0de;
+    color: white;
+}
+
+.task button.edit:hover {
+    background-color: #31b0d5;
+}
+
+.task input[type="range"] {
+    width: 100px;
+}
+
+.priority-high {
+    color: red;
+}
+
+.priority-medium {
+    color: orange;
+}
+
+.priority-low {
+    color: green;
+}
+
+.status-badge {
+    
+    padding: 5px;
+    background-color: #17a2b8;
+    color: white;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.task.completed .status-badge {
+    background-color: #28a745;
+}
+
+.task input[type="checkbox"] {
+    margin-right: 10px;
+}
+.task button.edit.disabled {
+    background-color: #ccc; 
+    color: #666; 
+    cursor: not-allowed; 
+}
+@media (max-width: 1130px) and (min-width: 520px) {
+    
+
+.task{
+
+    display: block;
+    
+}
+.task > * {
+    margin-bottom: 20px; 
+  }
+
+  }
+  
