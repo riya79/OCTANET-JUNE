@@ -1,5 +1,5 @@
 # OCTANET-JUNE
-to do list 
+Task-2 to do list 
 
 TO DO List
 🚀 Task 1: Dynamic Todo List Project Showcase 📝✨
